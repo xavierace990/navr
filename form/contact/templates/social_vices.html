@@ -1,0 +1,172 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f3b99b4317.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <style>
+    *{
+      font-family: 'Roboto Mono', monospace;
+    }
+  </style>
+        <!--offcanvas-->
+        <div style="background-image: linear-gradient(white,skyblue);font-family: 'Roboto Mono', monospace;" class="offcanvas offcanvas-end" id="carousel">
+            <!--header-->
+            <div class="offcanvas-header ">
+              <img class="offcanvas-title " style="width: 80px;" src="{% static 'coc-logo.png' %}" alt="">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <!--body-->
+            <div class="offcanvas-body p-4  ">
+              <a class="text-decoration-none " href="{% url 'index' %}">
+                <p>Home</p>
+              </a>
+              <a class="text-decoration-none  " href="{% url 'about' %}">
+                <p>About</p>
+              </a>
+              <a class="text-decoration-none" href="{% url 'feedback' %}">
+                <p>Contact Us</p>
+              </a>
+              <a class="text-decoration-none" href="{% url 'preacher' %}">
+                <p>Our Preacher</p>
+              </a>
+              <a class="text-decoration-none" href="{% url 'teaching_sermon' %}">
+                <p>Teaching's and <br> Sermon's</p>
+              </a>
+              <a class="text-decoration-none" href="{% url 'user_login' %}">
+                <p>Bulletin</p>
+              </a>
+              <a class="text-decoration-none" href="{% url 'first'  %}">
+                <p>First Timer</p>
+              </a>
+            </div>
+        
+          </div>
+          <!--navbar-->
+          <nav class="navbar navbar-expand-md navbar-dark bg-white ">
+            <div class="container-fluid mt-1 ">
+              <a href="{% url 'index' %}"><img class="img-fluid" style="width: 50px;margin-left: 20px;" src="{% static 'coc-logo.png' %}" alt=""></a>
+        
+              <div style="background-image: url('');" class=" m-0 text-white">
+                <button class="btn btn-secondary mt-3 m-3 " type="button" data-bs-toggle="offcanvas" data-bs-target="#carousel">
+                  <i class="fa-solid fa-bars fa-fade"></i>
+                </button>
+              </div>
+            </div>
+          </nav>
+
+          <section style="overflow: hidden;background-color: skyblue;" class="p-5">
+            <center>
+                <h1>CHRISTIAN AND SOCIAL VICES</h1>
+                <p>1JOHN 2: 15 -17</p>
+             
+             <p style="font-size: xx-large;">INTRODUCTION</p><hr>
+             
+             <p style="font-size: xx-large;">Right from time immemorial, human beings have always hide social vices. As children of God, we are expected to be different from the world and not be engaged in these vices. The purpose of our lesson this morning is to remind ourselves of these things and God’s will. </p>
+            
+             <p style="font-size: xx-large;"> <hr>Definition Of Terms,<hr><br><hr> Examples Of Social Vices,<hr> <br><hr> Reasons Why Christians and their children get involved in social vices,<hr><br><hr> Dangers of indulging in involving social vices,<hr><br><hr> Godly principle for guidance,<hr><br><hr> What you should do as Christian youths,<hr><br><hr> What you should do as parents and conclude. <hr>
+            
+             <p style="font-size: xx-large;"> The purpose of this lesson is not for parents to all of sudden start beating our children when they get home but to be more strategic going forward and determine to raise Godly children forward.</p>
+             <br>
+             <p style="font-size: xx-large;"> DEFINITION OF TERMS </p><hr>
+             <br>
+             <p style="font-size: xx-large;"> Christian: Acts 11:26 tells us that the disciples were first called Christians in Antioch. So, this means that a Christian is a disciple. <br> A disciple is someone that follows the ways and commandments of His master or lord. <br> A Christian is someone who follows the commandments of Christ.</p>
+             <br>
+             <p style="font-size: xx-large;color: white;"> Social Vices:</p> <hr> <br>
+             <p style="font-size: xx-large;"> These are behaviours and practices that are not acceptable in the general society or that the society frowns at.</p>
+             <br>
+             <hr><p style="font-size: xx-large;"> EXAMPLES Of SOCIAL VICES <hr>
+                <br>
+                <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"> Internet Faud – Yahoo yahoo, yahoo plus 419 etc: <br>
+              This is using the internet to defraud innocent people of their money. This is one of the most common vices today and popular amongst young men.
+             <br> 
+            
+             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;">  Examination Malpractice: <br>
+              This is using unapproved methods to pass exams. This largely involves cheating in exams.
+             <br>
+             <i class="fa-solid fa-star"></i> <p style="font-size: xx-large;"> Cultism: <br>
+              Cultism can be defined as a ritual practice by a group of people whose membership, initiation, policies, and activities are done secretly. It is a secret society because it is not opened to everyone. In Nigeria, we have cult groups like Vikings, Black Axe, Eiye and the Buccaneers.
+             <br>
+             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"> Indecent Dressing and Abuse of the Body: <br>
+              Indecent dressing and abuse of the body are common today. This is basically wearing dresses that do not fully cover the body or piercing and tattooing one’s body. This is often influenced by peer pressure. This also include bleaching of the body by both men and woman.
+             <br>
+             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"> Drug Abuse and Alcoholism: <br>
+              Drug abuse and alcoholism are simply abuse of drugs and alcohol respectively. This is very common amongst our young men. Drugs like Tramadol, Codeine and Rufinor etc. Musicians even sing about them e.g. I am on a codeine diet.
+             <br>
+             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"> Money Rituals: <br> This involving doing all kinds of sacrifice and demonic things in the name of making money. </p>
+             <br>
+             <hr>
+             <p style="font-size: xx-large;">REASON WHY CHRISTIANS AND THEIR CHILDREN GET INVOLVED IN SOCIAL VICES</p>
+             <hr>
+
+             <i class="fa-solid fa-star"></i> <p style="font-size: xx-large;">Broken Homes: <br>Broken home is a platform for raising children that will be exposed to social vices</p>
+             <i class="fa-solid fa-star"></i> <p style="font-size: xx-large;">Peer pressure: <br> The pressure to conform (to do what others are doing) can be powerful and hard to resist. This interestingly affects all ages.</p>
+            
+             <i class="fa-solid fa-star"></i> <p style="font-size: xx-large;">Weak Parenting: <br> When either the father or the mother is weak and pamper children. Some parents are too busy to get involved in their children’s life.</p>
+            
+             <i class="fa-solid fa-star"></i> <p style="font-size: xx-large;">Failure to train the Child in the way of the Lord: <br> This is beyond coming to church or the children following their parents to Church. Does the child have a personal encounter or relationship with God?</p>
+            
+             <i class="fa-solid fa-star"></i> <p style="font-size: xx-large;">Ignoring the Important Signs: <br> Parents fail to see early signs of a child being involved in social vices. This will include piercing of the body, type of friends, words, bleaching, adding weight, being secretive, keeping bad friends etc. Some parents even collect money from their children without asking where they got it from.</p>
+            
+             <i class="fa-solid fa-star"></i> <p style="font-size: xx-large;">Get Rich Quick: <br> Youths that want to get rich quickly will do anything to make money including money rituals, yahoo yahoo and hook ups.</p>
+             <br>
+             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"> DANGERS OF INDULGING IN INVOLVING SOCIAL VICES</p> <hr>
+             <br>
+             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;">Destruction of the body and internal organs from bleaching and drugs</p>
+             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"> Backsliding and compromise of the faith – 2 Tim. 4:10</p>
+             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;">Hinderance to one’s education and progress in life </p>
+             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;">Exposure to deadly diseases such as sexually transmitted diseases (STDs)</p>
+             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;">Dishonour to God and brings shame to His church</p>
+             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;">Quick death - Prov. 29:1</p>
+             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;">Eternal punishment in hell-fire – Gal. 5: 19 - 21</p>
+            
+             <hr><p style="font-size: xx-large;">GODLY PRINCIPLE FOR GUIDANCE</p><hr>
+             <br>
+             <p style="font-size: xx-large;">Before you do anything, you should ask yourself some important questions guided by the principles in Phil. 4: 8-9 “Finally, brethren, whatsoever things are true, whatsoever things are honest, whatsoever things are just, whatsoever things are pure, whatsoever things are lovely, whatsoever things are of good report; if there be any virtue, and if there be any praise, think on these things.”</p>
+            
+             <br>
+             <hr> <p style="font-size: xx-large;"> Some Questions To Ask Yourselves</p><hr>
+             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"> Would Jesus do this?
+             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"> Does this glorify God? 1Cor. 10:31, Col. 3:17
+             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;">Can I preach to others to do it to follow me as I am initiator of Christ? 1 Cor. 11:1
+             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;">Can I preach the gospel while identifying with these things
+             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;">Will I be happy or feel embarrassed when this is mentioned in the church?
+            
+             <hr><p style="font-size: xx-large;">WHAT YOU SHOULD DO AS CHRISTIAN YOUTHS</p><hr>
+             <br>
+             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"> Follow the instructions of your parents – Eph. 6:1-2
+                <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"> Dedicate your life to God and Holiness – Psalm 1:1-2
+                    <i class="fa-solid fa-star"></i> <p style="font-size: xx-large;"> Avoid peer pressure by ignoring bad advices and not keeping bad friends – Prov. 1:10, 1 Cor. 15:33
+                        <i class="fa-solid fa-star"></i> <p style="font-size: xx-large;"> Determine to be different. To be the light in darkness – Exo. 23:2, Rom. 12:2, Matt. 5:16
+                            <i class="fa-solid fa-star"></i> <p style="font-size: xx-large;"> Decide to work hard and be proud – Psalm 128:2; 2 Thess. 3:10 -12, Eph. 4:28
+                                <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"> Don’t be afraid to talk to your parents or a counsellor no matter the aftermath.
+                                    <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"> Your focus now should be your education and making good grade. Good money chases value.
+                                        <i class="fa-solid fa-star"></i><p style="font-size: xx-large;">  It is better not to try a bad thing. Limit your curiosity to things of God. Find out more about the things of God not worldly things. Some things are better not tried – Gen. 3: 1-6
+            
+             <hr> <p style="font-size: xx-large;"> WHAT YOU SHOULD DO AS PARENTS</p><hr>
+             <br>
+             <p style="font-size: xx-large;">Parenting is a serious responsibility that carries grave consequences for neglecting responsibility.
+             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;">Train your children in the ways of the Lord – Prov. 22:6
+             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;">Parenting is more than flogging, its above getting involved like a shepherd. You can never get tired. Get involved in your children’s lives.
+             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;">Make it compulsory to provide for your children till they can stand on their own. Don’t expose them – 1Tim. 5:8
+             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;">Seek help when you notice something strange
+             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;">Speak out when your children do something terrible. Stop keeping things.
+             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;">Watch out for the early signs
+             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;">Pray for your children
+             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;">Don’t ever get tired in training your children
+            
+             <hr><p style="font-size: xx-large;">CONCLUSION</p><hr>
+             <br>
+             <p style="font-size: xx-large;">Life is sweet if you live well and do things that God has commanded. If you don’t, it leads to embarrassment. We need to shun all social vices and be good Christians and children. Parents needs to wake up to their responsibilities.
+            
+             <p style="font-size: xx-large;">May God give us the grace to practice these things in Jesus’ name.
+                <hr>
+                <p style="font-size: xx-large;" > DELIVERED BY BRO. DAVID ENILOLOBO ON 9TH, SEPTEMBER, 2023.</p><hr><hr>
+            </center>
+          </section>

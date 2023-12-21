@@ -1,0 +1,296 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f3b99b4317.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+  <style>
+    *{
+      font-family: 'Roboto Mono', monospace;
+      
+    }
+  </style>
+<div style="background-image: linear-gradient(wheat,skyblue)" class="offcanvas offcanvas-end" id="carousel">
+    <!--header-->
+    <div class="offcanvas-header ">
+      <img class="offcanvas-title " style="width: 80px;" src=" {% static 'coc-logo.png' %}" alt="">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <!--body-->
+    <div class="offcanvas-body p-4  ">
+      <a style="color: white;" class="text-decoration-none " href="{% url 'index' %}">
+        <p>Home</p>
+      </a>
+      <a style="color: white;" class="text-decoration-none  " href="{% url 'about' %}">
+        <p>About</p>
+      </a>
+      <a style="color: white;" class="text-decoration-none" href="{% url 'feedback' %}">
+        <p>Contact Us</p>
+      </a>
+      <a style="color: white;" class="text-decoration-none" href="{% url 'preacher' %}">
+        <p>Our Preacher</p>
+      </a>
+      <a style="color: white;" class="text-decoration-none" href="{% url 'teaching_sermon' %}">
+        <p>Teaching's and <br> Sermon's</p>
+      </a>
+      <a style="color: white;" class="text-decoration-none" href="{% url 'user_login' %}">
+        <p>Bulletin</p>
+      </a>
+      <a style="color: white;" class="text-decoration-none" href="{% url 'first'  %}">
+        <p>First Timer</p>
+      </a>
+    </div>
+
+  </div>
+  <!--hamburger-menu-->
+  <nav class="d-sm-flex p-3 navbar-dark bg-dark ">
+    <div class="container">
+      <center>
+        <span style="font-size: 12px;color: white;" class="" href="#">Opening Hours - 09 : 00AM Every Sunday <span>|</span></span>
+       <!-- Search input with search icon -->
+     
+        
+       <div>
+        <a  class="" href="https://www.facebook.com/profile.php?id=61553202030922"><button style="font-size: 12px;" class="btn btn-outline-primary"><i class="fa-brands fa-facebook"></i></button></a>
+
+        <a  class="" href="https://instagram.com/ojoduchurchofchrist?igshid=OGY3MTU3OGY1Mw=="><button style="font-size: 12px;" class="btn btn-outline-danger"><i class="fa-brands fa-instagram"></i></button></a>
+
+        <a  class="" href="https://www.youtube.com/@Church-of-christ-ojodu"><button style="font-size: 12px;" class="btn btn-outline-danger"><i class="fa-brands fa-youtube"></i></button></a>
+   
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          
+      </button>
+       </div>
+        </center>
+      
+    </div>
+    <div class="container-fluid d-none d-sm-block">
+      <center>
+          <a style="color: white;" class="text-decoration-none" href=""><button style="font-size: 12px;" class="btn btn-outline-secondary"><i class="fa-regular fa-envelope"></i></button> <span style="font-size: 12px;">churchofchristojodu@gmail.com</span></a>
+      </center>
+  </div>
+  
+  <div class="container-fluid d-none d-sm-block">
+      <center>
+          <a style="color: white;" class="text-decoration-none" href=""><button style="font-size: 12px;" class="btn btn-outline-primary"><i class="fa-solid fa-phone"></i></button> <span style="font-size: 12px;">Phone: +1 (123) 456-7890</span></a>
+      </center>
+  </div>
+  
+</nav>
+  <nav class="navbar navbar-expand-md navbar-dark bg-white ">
+    <div class="container-fluid mt-1 ">
+     <a href="{% url 'index' %}"> <img class="img-fluid" style="width: 50px;margin-left: 20px;" src="{% static 'coc-logo.png' %}" alt=""></a>
+
+      <div style="background-image: url('');" class=" m-0 text-white">
+        <button class="btn btn-secondary mt-3 m-3 " type="button" data-bs-toggle="offcanvas" data-bs-target="#carousel">
+          <i class="fa-solid fa-bars fa-fade"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+    <section style="background-image: linear-gradient(skyblue,rgb(241, 216, 216));background-repeat: repeat;background-position: center;background-size: cover;"  class="container-fluid  p-5">
+        <section style="color: white;">
+          <h1 class="text-center">Church Bulletin</h1>
+
+            <div class="d-sm-flex  mt-2 container" >
+              <div style="margin-right: 20px;border-radius: 20px; background-image: linear-gradient(skyblue,wheat);" class="container p-3 ">
+                <center>
+                  <h3 style="font-family: 'Oswald', sans-serif;">January Bulletin </h3>
+                  <br>
+                  <a href="{% url 'jan' %}"><button class="btn btn-outline-light">View</button></a>
+                  <a href="{% url 'generate_pdf' %}"><button class="btn btn-outline-light">Download</button></a>
+                </center>
+              </div>
+              <br>
+              <div style="margin-right: 20px;border-radius: 20px;background-image: linear-gradient(skyblue,wheat);" class="container p-3">
+                <center>
+                  <h3 style="font-family: 'Oswald', sans-serif;">February Bulletin</h3>
+                  <br>
+                  <center>
+                    <a href="{% url 'feb' %}"><button class="btn btn-outline-light">View</button></a>
+                    <a href="{% url 'february' %}"><button class="btn btn-outline-light">Download</button></a>
+                  </center>
+                </center>
+              </div>
+                  <br>
+              <div style="margin-right: 20px;border-radius: 20px;background-image: linear-gradient(skyblue,wheat);" class="container p-3">
+                  <center>
+                    <h3 style="font-family: 'Oswald', sans-serif;">March Bulletin</h3>
+                    <br>
+                    <center>
+                      <a href="{% url 'mar' %}"><button class="btn btn-outline-light">View</button></a>
+                      <a href="{% url 'march' %} "><button class="btn btn-outline-light">Download</button></a>
+                    </center>
+                  </center>
+                </div>
+            </div>
+          </section>
+
+          <!--section 2-->
+
+          <section style="color: white;">
+
+
+            <div class="d-sm-flex  mt-2 container " >
+              <div style="margin-right: 20px;border-radius: 20px;background-image: linear-gradient(skyblue,wheat);" class="container p-3 ">
+                <center>
+                  <h3 style="font-family: 'Oswald', sans-serif;">April Bulletin </h3>
+                  <br>
+                  <a href="{% url 'apr' %}"><button class="btn btn-outline-light">View</button></a>
+                  <a href="{% url 'april' %}"><button class="btn btn-outline-light">Download</button></a>
+                </center>
+              </div>
+              <br>
+              <div style="margin-right: 20px;border-radius: 20px;background-image: linear-gradient(skyblue,wheat);" class="container p-3">
+                <center>
+                  <h3 style="font-family: 'Oswald', sans-serif;">May Bulletin</h3>
+                  <br>
+                  <center>
+                    <a href="{% url 'may_b' %}"><button class="btn btn-outline-light">View</button></a>
+                    <a href="{% url 'may' %}"><button class="btn btn-outline-light">Download</button></a>
+                  </center>
+                </center>
+              </div>
+                  <br>
+              <div style="margin-right: 20px;border-radius: 20px;background-image: linear-gradient(skyblue,wheat);" class="container p-3">
+                  <center>
+                    <h3 style="font-family: 'Oswald', sans-serif;">June Bulletin</h3>
+                    <br>
+                    <center>
+                      <a href="{% url 'jun' %}"><button class="btn btn-outline-light">View</button></a>
+                      <a href="{% url 'june' %} "><button class="btn btn-outline-light">Download</button></a>
+                    </center>
+                  </center>
+                </div>
+            </div>
+          </section>
+          <br>
+          <!--section3-->
+
+          <section style="color: white;">
+
+
+            <div class="d-sm-flex  mt-2 container " >
+              <div style="margin-right: 20px;border-radius: 20px;background-image: linear-gradient(skyblue,wheat);" class="container p-3 ">
+                <center>
+                  <h3 style="font-family: 'Oswald', sans-serif;">July Bulletin </h3>
+                  <br>
+                  <a href="{% url 'jul' %}"><button class="btn btn-outline-light">View</button></a>
+                  <a href="{% url 'july' %}"><button class="btn btn-outline-light">Download</button></a>
+                </center>
+              </div>
+              <br>
+              <div style="margin-right: 20px;border-radius: 20px;background-image: linear-gradient(skyblue,wheat);" class="container p-3">
+                <center>
+                  <h3 style="font-family: 'Oswald', sans-serif;">August Bulletin</h3>
+                  <br>
+                  <center>
+                    <a href="{% url 'aug' %}"><button class="btn btn-outline-light">View</button></a>
+                    <a href="{% url 'august' %}"><button class="btn btn-outline-light">Download</button></a>
+                  </center>
+                </center>
+              </div>
+                  <br>
+              <div style="margin-right: 20px;border-radius: 20px;background-image: linear-gradient(skyblue,wheat);" class="container p-3">
+                  <center>
+                    <h3 style="font-family: 'Oswald', sans-serif;">September Bulletin</h3>
+                    <br>
+                    <center>
+                      <a href="{% url 'sep' %}"><button class="btn btn-outline-light">View</button></a>
+                      <a href=" {% url 'september' %} "><button class="btn btn-outline-light">Download</button></a>
+                    </center>
+                  </center>
+                </div>
+            </div>
+          </section>
+          <br>
+          <!--sect 4-->
+
+          <section style="color: white;">
+
+
+            <div class="d-sm-flex  mt-2 container" >
+              <div style="margin-right: 20px;border-radius: 20px;background-image: linear-gradient(skyblue,wheat);" class="container p-3 ">
+                <center>
+                  <h3 style="font-family: 'Oswald', sans-serif;">October Bulletin </h3>
+                  <br>
+                  <a href="{% url 'oct' %}"><button class="btn btn-outline-light">View</button></a>
+                  <a href="{% url 'october' %}"><button class="btn btn-outline-light">Download</button></a>
+                </center>
+              </div>
+              <br>
+              <div style="margin-right: 20px;border-radius: 20px;background-image: linear-gradient(skyblue,wheat);" class="container p-3">
+                <center>
+                  <h3 style="font-family: 'Oswald', sans-serif;">November Bulletin</h3>
+                  <br>
+                    <a href="{% url 'nov' %}"><button class="btn btn-outline-light">View</button></a>
+                    <a href="{% url 'november' %}"><button class="btn btn-outline-light">Download</button></a>
+                </center>
+              </div>
+                  <br>
+              <div style="margin-right: 20px;border-radius: 20px;background-image: linear-gradient(skyblue,wheat);" class="container p-3">
+                  <center>
+                    <h3 style="font-family: 'Oswald', sans-serif;">December Bulletin</h3>
+                    <br>
+                    <center>
+                      <a href="{% url 'dec' %}"><button class="btn btn-outline-light">View</button></a>
+                      <a href="  {% url 'december' %} "><button class="btn btn-outline-light">Download</button></a>
+                    </center>
+                  </center>
+                </div>
+            </div>
+          </section>
+    </section>
+
+
+
+
+
+
+    
+        <!-- Footer Section -->
+<footer class="footer p-5">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h4>Contact Us</h4>
+            <p><i class="fas fa-map-marker-alt"></i> 9,IGBEHINADUN STREET, OFF ODOZI,OJODU</p>
+            <p><i class="fas fa-phone"></i> Phone: +1 (123) 456-7890</p>
+            <p><i class="fas fa-envelope"></i> Email: churchofchristojodu <br> @gmail.com</p>
+        </div>
+        <div class="col-md-4">
+          <h4>Quick Links</h4>
+          <ul class="list-unstyled text-decoration-none">
+              <li><a style="color: black;" class="text-decoration-none" href="{% url 'index' %}">Home</a></li>
+              <br>
+              <li><a style="color: black;" class="text-decoration-none" href="{% url 'about' %}">About Us</a></li>
+              <br>
+              <li><a style="color: black;" class="text-decoration-none" href="{% url 'feedback' %}">Contact</a></li>
+          </ul>
+      </div>
+            <div class="col-md-4">
+                <h4>Connect With Us</h4>
+                <p>Stay updated with our latest news and updates:</p>
+                <div class="social-icons">
+                  <a href="https://www.facebook.com/profile.php?id=61553202030922"><i style="font-size: xx-large;" class="fab fa-facebook"></i></a>
+                  <a href="https://instagram.com/ojoduchurchofchrist?igshid=OGY3MTU3OGY1Mw=="><i style="font-size: xx-large;color: red;" class="fab fa-instagram"></i></a>
+                  <a href="https://www.youtube.com/@Church-of-christ-ojodu"><i style="font-size: xx-large;color: red;" class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+  <!-- End Footer Section -->
+</body>
+</html>
+
+
+

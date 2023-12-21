@@ -1,0 +1,292 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f3b99b4317.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+  <style>
+    *{
+      font-family: 'Roboto Mono', monospace;
+    }
+  </style>
+        <!--offcanvas-->
+        <div style="background-image: linear-gradient(white,skyblue);font-family: 'Roboto Mono', monospace;" class="offcanvas offcanvas-end" id="carousel">
+            <!--header-->
+            <div class="offcanvas-header ">
+              <img class="offcanvas-title " style="width: 80px;" src="{% static 'coc-logo.png' %}" alt="">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <!--body-->
+            <div class="offcanvas-body p-4  ">
+              <a class="text-decoration-none " href="{% url 'index' %}">
+                <p>Home</p>
+              </a>
+              <a class="text-decoration-none  " href="{% url 'about' %}">
+                <p>About</p>
+              </a>
+              <a class="text-decoration-none" href="{% url 'feedback' %}">
+                <p>Contact Us</p>
+              </a>
+              <a class="text-decoration-none" href="{% url 'preacher' %}">
+                <p>Our Preacher</p>
+              </a>
+              <a class="text-decoration-none" href="{% url 'teaching_sermon' %}">
+                <p>Teaching's and <br> Sermon's</p>
+              </a>
+              <a class="text-decoration-none" href="{% url 'user_login' %}">
+                <p>Bulletin</p>
+              </a>
+              <a class="text-decoration-none" href="{% url 'first'  %}">
+                <p>First Timer</p>
+              </a>
+            </div>
+        
+          </div>
+          <!--navbar-->
+          <nav class="navbar navbar-expand-md navbar-dark bg-white ">
+            <div class="container-fluid mt-1 ">
+              <a href="{% url 'index' %}"><img class="img-fluid" style="width: 50px;margin-left: 20px;" src="{% static 'coc-logo.png' %}" alt=""></a>
+        
+              <div style="background-image: url('');" class=" m-0 text-white">
+                <button class="btn btn-secondary mt-3 m-3 " type="button" data-bs-toggle="offcanvas" data-bs-target="#carousel">
+                  <i class="fa-solid fa-bars fa-fade"></i>
+                </button>
+              </div>
+            </div>
+          </nav>
+
+
+          <section style="overflow: hidden;background-color: skyblue;" class="p-5">
+                <div>
+                    <center>
+                        <h1 style="font-family: 'Roboto Mono', monospace;" class="container">HEAVEN AND HELL</h1>
+                    <p style="font-size: xx-large;">MATH.25:31-46</p>
+                    </center>
+                    <br>
+                    <center>
+                        <p style="font-size: xx-large;"><p style="font-size: xx-large;color: white;"> DEFINITION OF TERMS.</p><hr>
+                            <br>
+                            <br>
+                            <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"> HEAVEN: 
+                             <br> The abode of God and of the angels, and the    saints in his presence, conceived as beyond the sky.
+                             The blissful place for the afterlife.
+                             The sky, specifically, which the sun, moon and stars appear or move, the firmament, the celestial sphere.</p>
+                             <br>
+                             <br>
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"> HELL:
+                             <br>
+                             The place where sinners suffer; angels and afterlife human souls.</p>
+                             <br>
+                             <br>
+                             <p style="font-size: xx-large;color: white;"> THE OBJECTIVE OF THE LESSON. <hr>
+                                <br>
+                             To convey spiritual teachings and beliefs regarding the afterlife. 
+                             To inspire hope, encourage virtuous behavior, and provide guidance on how to attain a positive eternal outcome while avoiding negative consequences. -- To offer insight into the concepts of reward and punishment based on one's actions and choices in life, fostering moral growth and a deeper understanding of the spiritual realm.
+                             2Pt. 3:7-8
+                             "But the heaven and the earth which are now preserve by the same word, are reserved for fire until the day of judgement and prediction of ungodly men.
+                             But, beloved, do not forget this one thing, that with the lord, one day is as a thousand years, and a thousand years as one day.
+                             The Lord is not slack concerning his promise, as some count slackness, but His long suffering toward us, not willing that any should perish but that all should come to repentance"</p>
+                             <br>
+                             <br>
+                             <p style="font-size: xx-large;color: white;">INTRODUCTION. <hr>
+                                <br>
+                             In the Bible, heaven is often described as a place of eternal bliss and communion with God.  It depicted as a realm of peace, joy, and perfection, where believers are rewarded for their faith and good deeds. 
+                             <br>
+                             <br>
+                             On the other hand, hell is described as a place of punishment and separation from God, where the wicked face everlasting torment.  These concepts are found in various passages throughout the Bible, such as in the teachings of Jesus and in books like Revelation and Matthew.
+                             <br>
+                             <br>
+                             The concepts of these places, attract diverse beliefs especially with the atheists, humanists and those who do not believe in afterlife.
+                             However, there's no neutral everlasting place for man at the end of his life's journey here on earth, than heaven or hell.
+                            
+                             2These.1:7
+                             "And to give you who are trouble rest with us when the lord Jesus is revealed from heaven with his mighty angels.
+                             In flaming fire taking vengeance on those who do not know God, and on those who do not obey the Gospel of our Lord Jesus Christ
+                             These shall be punished with everlasting destruction from the presence of the lord  and from the glory of his power"</p>
+                             <br>
+                             <br>
+                             <p style="font-size: xx-large;color: white;"> THE REALITY AND NATURE OF HEAVEN AND HELL.</p><hr>
+                             <br>
+                             <br>
+                             <p style="font-size: xx-large;"> HEAVEN IS REAL, A LITERAL PLACE.</p>
+                             <br>
+                             <br>
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"> A prepared place for prepared people ( Jn.14:1-6)</p>
+                             <br>
+                             <br>
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"> Those, whose name are written in the book of Life (Lk.10:20)</p>
+                             <br>
+                             <br>
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"> House not made with hands.( 2Cor.5:1)</p>
+                             <br>
+                             <br>
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"> No flesh and blood enter there (1Cor.15:50ff)</p>
+                             <br>
+                             <br>
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"> A city, country, ie heavenly (Heb.11:16)</p>
+                             <br>
+                             <br>
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"> Made of new heaven and Earth. (2Pt.3:13)</p>
+                             <br>
+                             <br>
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"> Its beauty indescribable. (1Cor.2:9)</p>
+                             <br>
+                             <br>
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"> God, in the midst of the Paradise (Rev.2:7)</p>
+                             <br>
+                             <br>
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"> The city of the living God.(Heb.12:22)</p>
+                             <br>
+                             <br>
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"> A PLACE OF GLORY, REST FOR THE WEARY.
+                             No more tears, pain and death. (Rev.21:1-4)</p>
+                             <br>
+                             <br>
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"> A resting place for the righteous. (Heb 4:9-11)</p>
+                             <br>
+                             <br>
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"> Nothing that defiled enters (Rev.21:26-27)</p>
+                             <br>
+                             <br>
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"> For those who are faithful to the end. (Mt.10:22, Rev.2:10.)</p>
+                             <br>
+                             <br>
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"> Resurrection unto life. (Jn.5:28-29)</p>
+                             <br>
+                             <br>
+                             <p  style="font-size: xx-large;color: white;">GODLY, RIGHTEOUS.</p><hr>
+                             <br>
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;">God with his people. (Rev.21:3)</p>
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;">Those that obey God (Rev.22:14)</p>
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;">Angels and the saved human. (Heb.12:22-23, 5:8-9)</p>
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"> HEAVEN will last forever. 
+                             (Mt.25:46, Rom.6:23, 1These.4:17)</p>
+                             <br>
+                             <br>
+                             <p style="font-size: xx-large;color: white;"> HELL IS REAL, A LITERAL PLACE:</p><hr>
+                             <br>
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"></p>Eternal place of punishment. (Mt25:31-46)
+                             <br>
+                             <br>
+                             <i class="fa-solid fa-star"></i> 
+                             <br>
+                             <br>
+                             Burning in fire (Mk.9:43-48) Lk.16:19-31
+                             <br>
+                             <br>
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"></p>Punishment is by separation from God. (2These.1:7-9)
+                             <br>
+                             <br>
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"></p>The sinners will have their part in fire. (Rev.21:8,  20:10)
+                             <br>
+                             <br>
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"></p> A place of torment and agony. (Rev.20:14-15)</i>
+                             <br>
+                             <br>
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"></p>Weeping and gnashing of teeth. (Mt.25:30,46,8:13)
+                             <br>
+                             <br>
+
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"></p> A place of no hope (Luke16:26)
+                             <br>
+                             <br>
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"></p> A place of no rest  forever (Rev.14:11)
+                             <br>
+                             <br>
+                            
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"></p>Everlasting fire (Mat.18:8, Mk.9:43-48)
+                             <br>
+                             <br>
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"></p> Inhabited by the wicked; the devil and his angels (Mt25:41)
+                             <br>
+                             <br>
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"></p> All evil of all age (1Pt.4:17-18)
+                             <br>
+                             <br>
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"></p> The disobedient, liars. etc.(Rom.2:8-9, Rev.21:8, 1Cor.6:9-10)
+                             <br>
+                             <br>
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"></p> Hell is eternal (Mt.25:46, 10:28, Heb.6:2)
+                             <br>
+                             <br>
+
+                             <p style="font-size: xx-large;color: white;" >THE COMPONENTS OF A WHOLE MAN.</p><hr>
+
+
+                             <i class="fa-solid fa-star"></i><p style="font-size: xx-large;"></p>God created man in His own likeness. (Gen.1:26)
+                            
+                             Gen.2:7 "And the Lord God formed man of the dust of the ground, and breathe into his nostrils the breath of life; and man become a living being"
+                             <br>
+                             <br>
+                             1These.5:23 "Now May the God of peace himself sanctify you completely; and may your whole spirit, soul and body be preserved blameless at the coming of our Lord Jesus Christ"
+                             <br>
+                             Heb.4:12 "For the word of God is living and powerful and sharper than any two-edged  sword, piercing even to the division of soul and spirit and of joint and marrow, and is  a discerner of thoughts and intents of the heart
+                             <br>
+                             <i class="fa-solid fa-star"></i>The "Spirit" is the intellectual, emotional element of man, made in God image. (1Cor.2:11, Dan.7:15)
+                             <br>
+                             <i class="fa-solid fa-star"></i> The "Soul" is sometimes used for the life, that animates the body. (Gen.1:30, Act. 20:10ASVfn)
+                             <br>
+                             <i class="fa-solid fa-star"></i> The "body" is the physical part of Man (from the dust of the ground)
+                             <br>
+                             <i class="fa-solid fa-star"></i>The body, soul and spirit are the components of a whole man.
+                             <br>
+
+                             <i class="fa-solid fa-star"></i>The the thessalonian Christians were controlled by God's spirit (psuche), so also their souls (pnuema). These are children of God unlike unbelievers.
+                             <br>
+
+                             <i class="fa-solid fa-star"></i> Soul can exist apart from the physical body 
+                             (Mat.10:28; Rev.6:9)
+                             <br>
+                             It can be used synonymously with the spirit when separated from the body.
+                             At death, the the spirit returns to God who gave it (Eccl.12:7.)
+                             <br>
+                             Jesus gave his life (psych- soul) as a ransom for many. Note not His spirits  He said "Father into thy hands I commit my spirit (Luke23:46)
+                             <br>
+                             After death, the soul of Man goes to unseen abode (Hades) which comprised of a place of torment and Paradise (Abraham bosom) or a place of comfort. (Luke.16:19-31). This is a temporary place for afterlife, until the second coming of Christ.
+                             In the judgement day,  sentence to hell and heaven will be decided by Christ correspondingly.
+                             <br>
+                             <br>
+                             <p style="font-size: xx-large;color: white;" >THE OPPOSING VIEWS ABOUT HELL.</p><hr>
+                             <br>
+                             <br>
+                             People have attempted to soften biblical views concerning "the conscious torment in hell", and alternate it with annihilation, ie total extinction of body and soul. 
+                            
+                             Mat.10:28 "And do not fear those who kill the body but cannot kill the soul. But rather fear him who is able to destroy both soul and body in hell"
+                             Here,  Jesus mentioned not the loss of being, but the loss of well being.
+                             <br>
+                             Luke 12:47-48 "And, that servant who knew his Master's will and did not prepare himself or do according to His will shall be beaten with many stripes.
+                             48. But he who did not know, yet committing things deserving of stripes, shall be beaten with few."
+                             Again, if hell is not a eternal, there could be no sense, in Jesus word, concerning  degrees of punishment.
+                             <br>
+                             Mk.9:42-44 Jesus talked of the drastic nature of hell. The image of a worm, continuing to live, as the fire continued to burn is meant to conjure up the idea of continuous suffering on the part of the rebellious.
+                             Besides, Jesus talked of hell being eternal similar to heaven, with the same Greek word. (Rev.20:10,14,15)
+                             The Catholics believed in PURGATORY; where sinners suffer after death to pay for their sins, before ultimately going to heaven, if they repent. This idea is foreign to the New testament.
+                             <br>
+                             Heb.9:27 "And as it is appointed for man to die once, but after this, the judgement"
+                             The teaching of UNIVERSALISM, which is the idea that in the end every one will be saved. Jesus said that only those who obey him will be saved.( Mt.7:21-23)
+                             The disobedient people will have their chance expired forever (Jn.12:48)
+                             Those who believe in ANNIHILATION, should note that, the body of the wicked will be raised and judge like the body of the righteous, which will put on a mortality. (Jn.5:28-29, Act.24:15, Dan.12:2-3)
+                             <br>
+                             <p style="font-size: xx-large;color: white;" >Conclusion.</p><hr>
+                             The world is a stage, and humans are mere players. There is point of entry and exit to every human. The bottom line is whether you play your game, strictly, according to the rules of  your creator, that will guarantee  your exit to be with God, in his eternal bliss (heaven). Or disobey  Him and be punished in eternal hell.
+                            
+                             Mt.16:26 "For what profit is it to a man, if he gains the whole world and losses his own soul. Or what will a man give in exchange of his soul".
+                             <br>
+                             <br>
+                             <hr>
+                             <p style="font-size: xx-large;" > DELIVERED BY BRO. UWEM ESSIET ON 20TH, AUGUST, 2023.</p><hr><hr>
+                            
+                            </p>
+                    </center>
+                </div>   
+           
+        </section>
+    
+          </body>
+          </html>

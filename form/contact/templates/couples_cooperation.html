@@ -1,0 +1,234 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f3b99b4317.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+  <style>
+    *{
+      font-family: 'Roboto Mono', monospace;
+    }
+  </style>
+        <!--offcanvas-->
+        <div style="background-image: linear-gradient(white,skyblue);font-family: 'Roboto Mono', monospace;" class="offcanvas offcanvas-end" id="carousel">
+            <!--header-->
+            <div class="offcanvas-header ">
+              <img class="offcanvas-title " style="width: 80px;" src="{% static 'coc-logo.png' %}" alt="">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <!--body-->
+            <div class="offcanvas-body p-4  ">
+              <a class="text-decoration-none " href="{% url 'index' %}">
+                <p>Home</p>
+              </a>
+              <a class="text-decoration-none  " href="{% url 'about' %}">
+                <p>About</p>
+              </a>
+              <a class="text-decoration-none" href="{% url 'feedback' %}">
+                <p>Contact Us</p>
+              </a>
+              <a class="text-decoration-none" href="{% url 'preacher' %}">
+                <p>Our Preacher</p>
+              </a>
+              <a class="text-decoration-none" href="{% url 'teaching_sermon' %}">
+                <p>Teaching's and <br> Sermon's</p>
+              </a>
+              <a class="text-decoration-none" href="{% url 'user_login' %}">
+                <p>Bulletin</p>
+              </a>
+              <a class="text-decoration-none" href="{% url 'first'  %}">
+                <p>First Timer</p>
+              </a>
+            </div>
+        
+          </div>
+          <!--navbar-->
+          <nav class="navbar navbar-expand-md navbar-dark bg-white ">
+            <div class="container-fluid mt-1 ">
+              <a href="{% url 'index' %}"><img class="img-fluid" style="width: 50px;margin-left: 20px;" src="{% static 'coc-logo.png' %}" alt=""></a>
+        
+              <div style="background-image: url('');" class=" m-0 text-white">
+                <button class="btn btn-secondary mt-3 m-3 " type="button" data-bs-toggle="offcanvas" data-bs-target="#carousel">
+                  <i class="fa-solid fa-bars fa-fade"></i>
+                </button>
+              </div>
+            </div>
+          </nav>
+
+          <section style="overflow: hidden;background-color: skyblue;" class="p-5">
+            <center>
+                <h1>COUPLES COOPERATION IN TRAINING CHILDREN
+                </h1>
+                <p>PROVERBS 22:6</p>
+                <p style="font-size: xx-large;">
+                OUTLINE
+                <hr> 
+                <br>
+                ⦁<p style="font-size: x-large;">Definition of terms</p>	 
+                <br>
+                ⦁	<p style="font-size: x-large;">Objectives of the lesson</p> 
+                <br>
+                ⦁	<p style="font-size: x-large;">Introduction</p>
+                <br>
+                ⦁	<p style="font-size: x-large;">What is the purpose of training and educating the child </p>
+                <br>
+                ⦁	<p style="font-size: x-large;">Spiritual training</p>
+                <br>
+                ⦁	<p style="font-size: x-large;">Emotional/ Social Training</p>
+                <br>
+                ⦁	<p style="font-size: x-large;">Child Discipline as a means of training</p>
+                <br>
+                ⦁	<p style="font-size: x-large;">The dangers of not training our children properly</p>
+                <br>
+                ⦁	<p style="font-size: x-large;">Conclusion</p>
+                </p>
+              <p style="font-size: xx-large;">DEFINITION OF TERMS </p><hr>
+             
+               <p style="font-size: x-large;">COUPLES: "Married Couple" The term refer to a single pair of Individual who are married to each other.
+                <br>
+                <br>
+                COOPERATION: The action or process of working together to the same end.
+                <br>
+                <br>
+                TRAINING: The action of teaching of a person or animal a particular skill or type of behavior.
+                <br>
+                <br> 
+                CHILDREN: A young human being below the age of puberty or below the legal age of majority. Synonyms- Youngster, Young one, Little one, boy, girl, baby etc.
+                
+                <br>
+               
+              
+
+                 </p>
+                 <br>
+             <p style="font-size: xx-large;">OBJECTIVES OF THE LESSON </p><hr>
+             ⦁<p style="font-size: x-large;">To help us to work together to develop strategies and actions for family members to reach their goals.</p>
+             ⦁<p style="font-size: x-large;">	To help children connect with others, build positive friendships and support children to self–regulate their emotions.</p>
+ 
+             <p style="font-size: xx-large;">INTRODUCTION
+             </p><hr>
+             <br>
+             <p style="font-size: x-large;">The church has not been putting much emphasis on proper training of our children. In some homes, this is done in an acquired culture brought in by civilization which is not in accord with Christians ethics (behaviour). Therefore, this topic at this time of our moral and spiritual decadence is important to all parents. </p>
+             <br>
+             <p style="font-size: x-large;">Building healthy family relationships is a team sport. But what do you do when you are raising a child who has never been part of a team?</p>
+             <br>
+             <p style="font-size: x-large;">Cooperation, sharing, and considering the needs of others are essentials to having a successful family team dynamic. These qualities and behaviors are learned through early secure attachments. Children with compromised attachments becomes self-absorbed. They need time and opportunities to learn about the give and take of relationships including cooperation, empathy and reciprocity. </p>
+             <br>
+             <hr><p style="font-size: xx-large;">WHAT IS THE PURPOSE OF COUPLES COOPERATION IN TRAINING AND EDUCATING THE CHILD? </p><hr>
+             <br>
+             <p style="font-size: x-large;">This training is necessary in the life of the child so that he or she will be well established spiritually, emotionally and socially adjusted to the child's personal happiness.</p>
+             <br>
+             
+             <p style="font-size: x-large;"> An old adage says that "charity begins at home". A child who knows no love and had not seen love at home will not show love or feel love in the child's dealings with others. Some people often make a sagacious statement this: 'Like father, like son/daughter' and like mother. Or we say, this child has no home training. King Solomon said in Prov. 20:11 that "Even a child is known by his deeds. By whether what he does is pure and right." All these point to the role of the couples in child training/ educating at home. The home is the bulwark of civilization and the supporting base of the church. The church, how pure, strong or impure, weak in the future would depend on the type of the training we give to our children. As future leaders of the church/ nation, the result of such training would manifest in how the affairs of the nation would be managed. The beginning of knowledge is to fear God. To prolong days, one has to fear God. The fear of God is a fountain of life. The child must understand this - Prov. 1:7; 9:10; 10:27 and 14:27</p>
+             <br>
+             <p style="font-size: x-large;"> Spiritual and moral training of the children is best achieved through setting of good examples by the couples, discipline and instruction / advice must be maintained. No couple can train a child to live upright by instruction and advice only. The couple must show by example an indelible print in the sands of time for the children to follow. Some couples are weak in child discipline. A good man does not always make good parents. Eli and David are good men, but bad parents- 1 Sam. 3:13; 1 Kings 11:6.</p>
+              
+              
+              
+            
+             <p style="font-size: xx-large;">SPIRITUAL TRAINING</p>
+                <hr>
+                <br>
+                 <p style="font-size: x-large;" >The children must be introduced to the general rule: "Fear God and keep his commandments; for this is the whole duty of man". Eccl. 12:13; 1 Pet. 2:17. Let the couple by example in their various activities, teach the children this general rule. The earlier the training, the more effective it will be. What is learnt early is more firmly retained. It stands the friction of time with the least injury instead of waiting for the maturity of reason to work upon the fallibility of childhood - Lam 3:27; Ps 34:1; Eccl 12:1</p>
+                 <br>
+
+                 <p style="font-size: x-large;">Special areas of training are: </p>  
+
+                  ⦁<p style="font-size: x-large;">	Train the child in family prayer (Matt. 18:19). Let the child knows the importance of prayer at the early stage of the child's life - 1 Cor. 14:15; Jas 5:13. It is not easy to maintain a life of piety without regular habits of prayer.</p>
+                  ⦁<p style="font-size: x-large;">Train the child not to tell lies (Prov. 21:8; Ps 119:163)</p>
+                  ⦁<p style="font-size: x-large;">Train the child not to covet (Acts 20:33; 1 Cor 6:10).</p>
+                  
+                  ⦁<p style="font-size: x-large;">Train the child not to steal (Mk.10:19; Lk 18:20; Prov. 28:24).
+                  Stealing always starts from home and very often no attention is paid to it because what is stolen is daddy's or mummy's.</p>
+                  ⦁<p style="font-size: x-large;">	Train the child to hate the world, being the right step to spiritual growth and maturity (Ps. 5:5; 97:10; 119:104, 113, 128; Amos 5:15; 1 Jn. 3:1).</p> 
+                  ⦁<p style="font-size: x-large;">	Train the child in the service of the Lord (HEB 10:25). Couple  should take the children to church activities, by so doing, the children will grow to live the work of the Lord, and be closer to Him.</p>
+                  ⦁<p style="font-size: x-large;">  	 Train the child to imbibe humility (Prov. 22:4). Pride in children is a destroyer like a loathsome disease. Therefore, keep the child off from pride which is capable of setting in motion various vices- Prov.6:16 - 19; 8:13; 11:2; 18, 19.</p>
+                  ⦁<p style="font-size: x-large;"> 	Train the Child to respect elders so that his or her days shall be prolonged (Prov. 20:20; 30:11; Mk 7:10; Eph. 6:1- 3; Col. 3:20. 1 Tim 5:4). </p>
+
+                  <p style="font-size: xx-large;">EMOTIONAL / SOCIAL TRAINING </p>
+                  <p style="font-size: xx-large;">The importance of this training cannot be quantified. Without this training, the strength of envy, jealousy and hatred in the child cannot be avoided. Do not encourage the child to out-do others in dress or in other ways; for this is the heart of worldliness. 
+                  <hr>  <p style="font-size: xx-large;"> Follow up these guides: </p><hr>
+                    ⦁<p style="font-size: x-large;">	Train the child in self-control (Prov. 16:32; Rom 6:12; Eccl. 7:9; Eph. 5:26).</p>
+                    ⦁<p style="font-size: x-large;">	Train the child in the right use of the tongue. The tongue is dangerous and should be so treated (Prov 34:13; 13:3; 21:23; 1 Pet 3:10; Jas; 1:26; 3:2). The child should be made to understand that due to its dangerous position, God placed it in a cage. If wrongly used, it can bring calamity to the entire family; </p>
+                    ⦁<p style="font-size: x-large;">	Train the child to love neighbours. This will go a long way in the child's social adjustment (Mk. 12:12, 13, 33;Matt. 5:43; 22:39; Gal. 5:4; Jas 2:8; Prov 3:28, 29).
+                    </p>
+                    <br>
+                    <p style="font-size: xx-large;">CHILD DISCIPLINE AS A MEANS OF TRAINING	</p><hr>
+                    <br>
+                    <p style="font-size: x-large;">There are various ways of discipline a child, but we shall address ourselves to that which the scriptures specified explicitly - "Spare not the rod". It is a necessary tool in child training- Prov 13:24 " He who spare the child heart- breaking experiences later in life.
+                      <br>
+                      <br>
+                    Couple ought to know that foolishness is bound in the heart of a child; but rod of correction and hall five it far from him" (Prov 22:15). 
+                    <br>
+
+                    At the tender age, mother's should have tremendous influence over the children for the early life of the child is tied to the mother. Before The child is born, he or she lives by the mother's heart and after being born, the child lives by the mother's guiding hand. Couple must not yield to the child's self-will, either to appease the child's anger or crying. By yielding to in either case, the child gets the idea that he or she can "get his or her way" by being disagreeable.
+                    <br>
+                    <br>
+                    Whenever this situation arises, it becomes practically impossible to break self-will. At this stage, do not forget to use the rod, for the purpose of inflicting pain on the willful child. Pain becomes necessary so that the child might learn early that, "pain is the price life exacts on the selfish and willful". 
+                    <br>
+                    <br>
+                    The difficulty that would arise will be insurmountable when the child has been allowed to become master. For the habit of disobedience has been formed and hardened. It would be almost impossible to break the spirit of disobedience. Let the child bear the yoke of his or her youth.
+                      </p>
+                      <br>
+                      <p style="font-size: xx-large;">THE DANGERS OF NOT TRAINING OUR CHILDREN PROPERLY</p><hr>
+
+                      <p style="font-size: x-large;">In any home where there is no proper training of the children there will be anarchy. The children will grow wild, disrespectful, insubordinate and wicked. Matt 7:6 reads: King Solomon refers to such children this: 
+                         <br> " There is a generation that curses it's father, and does not bless it's mother" Prov. 30:11. 
+                         <br> Paul wrote to his son in Christ, warning him of a deadly situation- "For men will be lovers of themselves, lovers of money, boasters, proud, blasphemies, disobedient to couples, unthankful, unholy, ........" 2 Tim. 3:2-4.</p>
+                         <p style="font-size: xx-large;">CONCLUSION</p><hr>
+                          <br>
+                         Patience is needed in child training, for the bread cast upon the waters is found not till after many days (Eccl. 11:1). Couple should keep to the golden rule: "If at first you don't succeed, try, try, try, again". 
+                         <br>
+                         Some parents use to say: "We have done our best, but the child would not take to our advice." My advice is, check yourselves. Have you been setting good examples before the child? Have you not failed in one way or the other in your way of living and dealing with your wife/husband etc? 
+                         <br>
+                         <br>
+                         Children are good imitators take heed as to what you do before them. Provoke not your children to anger- Col. 3:21. Choose friends for your children, do not allow them befriend all and sundries around you. You must know who your children's friends are. If not, your children will learn one thing at home and another by the friends.
+                         <br>
+                         <br> 
+                         It is obvious that the child will matriculate in characters different from that of the family. Our children should be made to obey. Couples must not leave the training of their children to house-helps (Nannies). This is dangerous; for you will end up having what you never expected. Try and inculcate sense of value and appreciation in the children. Sentimental kindness to the children is good but not in their disobedience. That would be a great sin that will plague and curse their lives. Remember Eli, who could not device a better way to handle his erring children. I, therefore, urge every couple to take a critical look at how the children are being trained, so as to Avoid pains and miseries to themselves
+                        <br>
+                        <hr>
+                <p style="font-size: xx-large;" > DELIVERED by Bro. Uwah U.B  ON 1ST, OCTOBER, 2023.</p><hr><hr>
+
+            </center>
+
+       <!-- Footer Section -->
+       <footer class="footer p-5">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 9,IGBEHINADUN STREET, OFF ODOZI,OJODU</p>
+                <p><i class="fas fa-phone"></i> Phone: +1 (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i> Email: churchofchristojodu <br> @gmail.com</p>
+            </div>
+            <div class="col-md-4">
+              <h4>Quick Links</h4>
+              <ul class="list-unstyled text-decoration-none">
+                  <li><a style="color: black;" class="text-decoration-none" href="{% url 'index' %}">Home</a></li>
+                  <br>
+                  <li><a style="color: black;" class="text-decoration-none" href="{% url 'about' %}">About Us</a></li>
+                  <br>
+                  <li><a style="color: black;" class="text-decoration-none" href="{% url 'feedback' %}">Contact</a></li>
+              </ul>
+          </div>
+                <div class="col-md-4">
+                    <h4>Connect With Us</h4>
+                    <p>Stay updated with our latest news and updates:</p>
+                    <div class="social-icons">
+                      <a href="https://www.facebook.com/profile.php?id=61553202030922"><i style="font-size: xx-large;" class="fab fa-facebook"></i></a>
+                      <a href="https://instagram.com/ojoduchurchofchrist?igshid=OGY3MTU3OGY1Mw=="><i style="font-size: xx-large;color: red;" class="fab fa-instagram"></i></a>
+                      <a href="https://www.youtube.com/@Church-of-christ-ojodu"><i style="font-size: xx-large;color: red;" class="fa-brands fa-youtube"></i></a>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </footer>
+      <!-- End Footer Section -->
+          </section>

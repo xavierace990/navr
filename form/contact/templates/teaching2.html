@@ -1,0 +1,335 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f3b99b4317.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <style>
+    *{
+      font-family: 'Roboto Mono', monospace;
+    }
+  </style>
+     <!--offcanvas-->
+     <div style="background-image: linear-gradient(white,skyblue);font-family: 'Roboto Mono', monospace;" class="offcanvas offcanvas-end" id="carousel">
+        <!--header-->
+        <div class="offcanvas-header ">
+          <img class="offcanvas-title " style="width: 80px;" src="{% static 'coc-logo.png' %}" alt="">
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <!--body-->
+        <div class="offcanvas-body p-4  ">
+          <a class="text-decoration-none " href="{% url 'index' %}">
+            <p>Home</p>
+          </a>
+          <a class="text-decoration-none  " href="{% url 'about' %}">
+            <p>About</p>
+          </a>
+          <a class="text-decoration-none" href="{% url 'feedback' %}">
+            <p>Contact Us</p>
+          </a>
+          <a class="text-decoration-none" href="{% url 'preacher' %}">
+            <p>Our Preacher</p>
+          </a>
+          <a class="text-decoration-none" href="{% url 'teaching_sermon' %}">
+            <p>Teaching's and <br> Sermon's</p>
+          </a>
+          <a class="text-decoration-none" href="{% url 'user_login' %}">
+            <p>Bulletin</p>
+          </a>
+          <a class="text-decoration-none" href="{% url 'first'  %}">
+            <p>First Timer</p>
+          </a>
+        </div>
+    
+      </div>
+      <!--navbar-->
+      <nav class="d-sm-flex p-3 navbar-dark bg-dark ">
+        <div class="container">
+          <center>
+            <span style="font-size: 12px;color: white;" class="" href="#">Opening Hours - 09 : 00AM Every Sunday <span>|</span></span>
+           <!-- Search input with search icon -->
+         
+            
+           <div>
+            <a  class="" href="https://www.facebook.com/profile.php?id=61553202030922"><button style="font-size: 12px;" class="btn btn-outline-primary"><i class="fa-brands fa-facebook"></i></button></a>
+  
+            <a  class="" href="https://instagram.com/ojoduchurchofchrist?igshid=OGY3MTU3OGY1Mw=="><button style="font-size: 12px;" class="btn btn-outline-danger"><i class="fa-brands fa-instagram"></i></button></a>
+  
+            <a  class="" href="https://www.youtube.com/@Church-of-christ-ojodu"><button style="font-size: 12px;" class="btn btn-outline-danger"><i class="fa-brands fa-youtube"></i></button></a>
+       
+  
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              
+          </button>
+           </div>
+            </center>
+          
+        </div>
+        <div class="container-fluid d-none d-sm-block">
+          <center>
+              <a style="color: white;" class="text-decoration-none" href=""><button style="font-size: 12px;" class="btn btn-outline-secondary"><i class="fa-regular fa-envelope"></i></button> <span style="font-size: 12px;">churchofchristojodu@gmail.com</span></a>
+          </center>
+      </div>
+      
+      <div class="container-fluid d-none d-sm-block">
+          <center>
+              <a style="color: white;" class="text-decoration-none" href=""><button style="font-size: 12px;" class="btn btn-outline-primary"><i class="fa-solid fa-phone"></i></button> <span style="font-size: 12px;">Phone: +1 (123) 456-7890</span></a>
+          </center>
+      </div>
+      
+    </nav>
+      <nav class="navbar navbar-expand-md navbar-dark bg-white ">
+        <div class="container-fluid mt-1 ">
+          <a href="{% url 'index' %}"><img class="img-fluid" style="width: 50px;margin-left: 20px;" src="{% static 'coc-logo.png' %}" alt=""></a>
+    
+          <div style="background-image: url('');" class=" m-0 text-white">
+            <button class="btn btn-secondary mt-3 m-3 " type="button" data-bs-toggle="offcanvas" data-bs-target="#carousel">
+              <i class="fa-solid fa-bars fa-fade"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <section></section>
+
+      <section style="background-color: skyblue;overflow: hidden;">
+        <center>
+         <hr> <h1 style="font-family: Arial, Helvetica, sans-serif;" class="p-3">TOPICS</h1><hr>
+        </center>
+      </section>
+      <div style="background-color: skyblue;" class="card-group p-3">
+        <!--div1-->
+       
+        <div class="card m-2">
+            <a style="text-decoration: none;" href="{% url 'heaven_and_hell' %}">
+            <center>
+                <img src="../static/heavn.webp" class="card-img-top" alt="..."height="265px">
+            </center>
+            <center>
+                <div class="card-body">
+                    <h5 class="card-title">HEAVEN AND HELL <p>MATH.25:31-46
+                    </p>
+                    </h5>
+                    <p class="card-text">To convey spiritual teachings and beliefs regarding the afterlife. 
+                        --  To inspire hope, encourage virtuous behavior, and provide guidance on how to attain a positive eternal outcome while avoiding negative consequences. -- To offer insight into the concepts of reward and punishment based on one's actions and choices in life, fostering moral growth and a deeper understanding of the spiritual realm.
+                        </p>
+                    <p class="card-text"><small class="text-muted">MATH.25:31-46
+                    </small></p>
+                  </div>
+            </center>
+             </a>
+        </div>
+        <!--div2-->
+        <div class="card m-2">
+            <a style="text-decoration: none;" href="{% url 'social_vices' %}">
+            <center>
+                <img src="../static/social vices.jpeg" class="card-img-top" alt="..." height="265px">
+            </center>
+            <center>
+                <div class="card-body">
+                    <h5 class="card-title">CHRISTIAN AND SOCIAL VICES</h5>
+                    <p class="card-text">Right from time immemorial, human beings have always hide social vices. As children of God, we are expected to be different from the world and not be engaged in these vices. 
+                        
+                        The purpose of this lesson is not for parents to all of sudden start beating our children when they get home but to be more strategic going forward and determine to raise Godly children forward.
+                        </p>
+                    <p class="card-text"><small class="text-muted">1JOHN 2: 15 -17
+                    </small></p>
+                  </div>
+            </center>
+            </a>
+        </div>
+        <!--div3-->
+        <div class="card m-2">
+            <a style="text-decoration: none;" href="{% url 'couples_cooperation' %}">
+            <center>
+                <img src="../static/training.jpg" class="card-img-top" alt="...">
+            </center>
+            <center>
+                <div class="card-body">
+                    <h5 class="card-title">COUPLES COOPERATION IN TRAINING CHILDREN</h5>
+                    <p class="card-text">The church has not been putting much emphasis on proper training of our children. In some homes, this is done in an acquired culture brought in by civilization which is not in accord with Christians ethics (behaviour). Therefore, this topic at this time of our moral and spiritual decadence is important to all parents. </p>
+                    <p class="card-text"><small class="text-muted">PROVERBS 22:6</small></p>
+                  </div>
+            </center>
+             </a>
+             </div>
+         </div>
+
+
+         <!--div2-->
+
+         <div style="background-color: skyblue;" class="card-group p-3">
+            <!--div1-->
+            <div class="card m-2">
+                <a style="text-decoration: none;" href="{% url 'joy_of_the_lord' %}">
+                <center>
+                    <img src="../static/joy of god.png" class="card-img-top" alt="..." height="265px">
+                </center>
+                <center>
+                    <div class="card-body">
+                        <h5 class="card-title">The Joy of the Lord
+                        </h5>
+                        <p class="card-text">Towards the close of His earthly ministry, Jesus did not assure His disciples of a life free from challenges in the cause of Christianity. And neither did He promise them earthly joy or happiness, but that is not to say that we don't need happiness in life as God's people, or work to acquire material things in life which give happiness.
+                            The joy Jesus Christ experienced in obedience to His Father; love for His Father; and faithfulness to His Father, was expected of His disciples then, as it is also demanded of christians today and always. This joy is perfect and perpetual, not earthly joy related to the acquisition or expectation of something good, though we need it.
+                            </p>
+                        <p class="card-text"><small class="text-muted">John 15:11</small></p>
+                      </div>
+                </center>
+                 </a>
+            </div>
+            <!--div2-->
+            <div class="card m-2">
+                <a style="text-decoration: none;" href="">
+                <center>
+                    <img src="../static/subdue.jpeg" class="card-img-top" alt="..." height="265px">
+                </center>
+                <center>
+                    <div class="card-body">
+                        <h5 class="card-title">SUBDUING THE ATTITUDE OF ANGER
+                        </h5>
+                        <p class="card-text">Anger is a normal feeling and can be a positive emotion when it helps you work through issues or problem whether that's at work or at home. However, anger can become problematic if it leads to aggression, outburst or even physical altercations. Having the attitude to subdue anger is important for helping you avoid saying or doing something you may regret. Before anger escalates, you must be able to avoid some certain talk and argument most especially in the home, in the Church and our environs. 
+                        </p>
+                        <p class="card-text"><small class="text-muted">Eph.4:26-27</small></p>
+                      </div>
+                </center>
+                </a>
+            </div>
+            <!--div3-->
+            
+            <div class="card m-2">
+                <a style="text-decoration: none;" href="">
+                <center>
+                    <img src="../static/endure.jpg" class="card-img-top" alt="..." height="265">
+                </center>
+                <center>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                        </h5>
+                        <p class="card-text">We live in uncertain times. 
+                            The current socio-economic development has left millions of families grappling for survival. 
+                            While a negligible few are living, the majority are just existing or surviving.
+                            The cost of living is skyrocketing with no end in sight while the standard of living is declining.
+                            Prices of goods and services are soaring.
+                            Criminality is on the rise.
+                            Morality has developed wings.
+                            Our long-cherished values are thrown overboard.
+                         
+                         </p>
+                        <p class="card-text"><small class="text-muted">Rom. 5:3-5</small></p>
+                      </div>
+                </center>
+                 </a>
+                 </div>
+             </div>
+             
+             <!--div3-->
+
+             <div style="background-color: skyblue;" class="card-group p-3">
+              <!--div1-->
+             
+              <div class="card m-2">
+                  <a style="text-decoration: none;" href="{% url 'heaven_and_hell' %}">
+                  <center>
+                      <img src=".." class="card-img-top" alt="..."height="265px">
+                  </center>
+                  <center>
+                      <div class="card-body">
+                          <h5 class="card-title">
+                            <p></p>
+                          </h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam officiis id, adipisci vel tenetur quod, quasi doloribus iure facilis recusandae exercitationem quidem dolore numquam placeat unde et ducimus incidunt earum.
+                              </p>
+                          <p class="card-text"><small class="text-muted">
+                          </small></p>
+                        </div>
+                  </center>
+                   </a>
+              </div>
+              <!--div2-->
+              <div class="card m-2">
+                  <a style="text-decoration: none;" href="{% url 'social_vices' %}">
+                  <center>
+                      <img src=".." class="card-img-top" alt="..." height="265px">
+                  </center>
+                  <center>
+                      <div class="card-body">
+                          <h5 class="card-title"></h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facere, esse, omnis ut inventore dolores ratione dicta vitae eum totam deserunt officiis dignissimos eius facilis reiciendis culpa odio corporis quae?
+                              </p>
+                          <p class="card-text"><small class="text-muted">
+                          </small></p>
+                        </div>
+                  </center>
+                  </a>
+              </div>
+              <!--div3-->
+              <div class="card m-2">
+                  <a style="text-decoration: none;" href="{% url 'couples_cooperation' %}">
+                  <center>
+                      <img src=".." class="card-img-top" alt="...">
+                  </center>
+                  <center>
+                      <div class="card-body">
+                          <h5 class="card-title"></h5>
+                          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis impedit ipsam veritatis nisi suscipit, laborum repellat ipsa maxime incidunt vero labore ad quae doloribus blanditiis alias nostrum voluptate at nesciunt. </p>
+                          <p class="card-text"><small class="text-muted"></small></p>
+                        </div>
+                  </center>
+                   </a>
+                   </div>
+                     <!--pagination-->
+             <nav class="container-fluid" aria-label="...">
+              <ul class="pagination p-2 ">
+                <li class="page-item">
+                 <a class="page-link" href="{% url 'teaching1' %}">Previous</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="{% url 'teaching3' %}">Next</a>
+                </li>
+              </ul>
+            </nav>
+               </div>
+           
+
+
+           <!-- Footer Section -->
+<footer class="footer p-5">
+  <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Contact Us</h4>
+          <p><i class="fas fa-map-marker-alt"></i> 9,IGBEHINADUN STREET, OFF ODOZI,OJODU</p>
+          <p><i class="fas fa-phone"></i> Phone: +1 (123) 456-7890</p>
+          <p><i class="fas fa-envelope"></i> Email: churchofchristojodu <br> @gmail.com</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Quick Links</h4>
+        <ul class="list-unstyled text-decoration-none">
+            <li><a style="color: black;" class="text-decoration-none" href="{% url 'index' %}">Home</a></li>
+            <br>
+            <li><a style="color: black;" class="text-decoration-none" href="{% url 'about' %}">About Us</a></li>
+            <br>
+            <li><a style="color: black;" class="text-decoration-none" href="{% url 'feedback' %}">Contact</a></li>
+        </ul>
+    </div>
+          <div class="col-md-4">
+              <h4>Connect With Us</h4>
+              <p>Stay updated with our latest news and updates:</p>
+              <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61553202030922"><i style="font-size: xx-large;" class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com/ojoduchurchofchrist?igshid=OGY3MTU3OGY1Mw=="><i style="font-size: xx-large;color: red;" class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@Church-of-christ-ojodu"><i style="font-size: xx-large;color: red;" class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+      </div>
+  </div>
+</footer>
+<!-- End Footer Section -->
+ 
+</body>
+</html>
